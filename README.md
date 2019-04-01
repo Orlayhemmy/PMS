@@ -41,8 +41,7 @@ This is the link to the [API docs](https://documenter.getpostman.com/view/491970
 To run the tests written for this application.
 
 ```
-$ npm test       // backend tests
-$ npm run client:test       //frontend tests
+$ yarn test
 ```
 
 ## Author
