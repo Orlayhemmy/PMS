@@ -19,9 +19,7 @@ This is the link to the [API docs](https://documenter.getpostman.com/view/491970
 # Technologies Used
 - [Express](https://expressjs.com/)  is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
-- [Postgres](https://www.mongodb.com) MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need
-
-- [Mongoose](https://mongoosejs.com/) is an open source object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance.
+- [Postgres](https://www.postgresql.org/) is an open source object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance.
 
 - [Babel](https://babeljs.io/) is a JavaScript compiler for converting codes written in ES6 to ES5 that is supported by many browsers
 
