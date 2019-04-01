@@ -7,7 +7,10 @@
   "author": "Olayemi Lawal",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node -- ./run.js"
+    "start:dev": "nodemon --exec babel-node -- ./server/run.js",
+    "start": "node dist/server/run.js",
+    "start:prod": "yarn build:prod && yarn start",
+    "build:prod": "rm -rf dist && NODE_ENV=production && babel server -d dist/server"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
