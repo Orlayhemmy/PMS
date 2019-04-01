@@ -32,6 +32,8 @@ export const validatePost = ({ body: { male, female, name } }, res, next) => {
 export const validateUpdateData = ({ body: { male, female, name } }, res, next) => {
   const errors = {};
   
+  if (name) errors.name = 'City name cannot be updated!';
+  
   if (male && !/^[0-9 ]+$/.test(male)) {
     errors.male = "Male population can only contain number";
   }
