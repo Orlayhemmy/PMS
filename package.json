@@ -13,7 +13,8 @@
     "build:prod": "rm -rf dist && NODE_ENV=production && babel server -d dist/server",
     "refresh:db": "node ./server/migration/tables.js dropTables && node ./server/migration/tables.js createTables",
     "test": "yarn refresh:db && yarn test:run",
-    "test:run": "NODE_ENV=test nyc --reporter=html --reporter=text mocha --require babel-register --require babel-polyfill --recursive server/test/index.js --timeout 30000 --exit"
+    "test:run": "NODE_ENV=test nyc --reporter=html --reporter=text mocha --require babel-register --require babel-polyfill --recursive server/test/index.js --timeout 30000 --exit",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.3",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "moment": "^2.24.0",
